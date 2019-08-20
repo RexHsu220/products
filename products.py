@@ -4,9 +4,6 @@ while True:
 	if name == 'q':
 		break
 	price = input('Please enter the price of the product: ')
-	p = []
-	p.append(name)
-	p.append(price)
-	products.append(p)
+	products.append([name, price]) #create a sub list and add name and price instantly to the sub list, then append this sublist with name and price into products list
 print(products)
-print(products[0][1])
+
